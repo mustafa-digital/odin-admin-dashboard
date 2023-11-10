@@ -4,10 +4,267 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Admin Dashboard</title>
-    <style rel="stylesheet" href="reset.css"></style>
-    <style rel="stylesheet" href="styles.css"></style>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container"> 
+        <header class="admin-header">
+            <div class="admin-header-top">
+                <div class="search-bar">
+                    <form action="" method="post" id="search-form">
+                        <input type="image" id="search-button" src="images/magnify.svg" alt="search button">
+                        <input type="search"
+                               id="search"
+                               name="search">
+                    </form>
+                </div>
+                <a href=""><img class="notification-icon" src="images/bell-outline.svg" alt="notification bell icon"></a>
+                <a href="">
+                    <div class="profile-picture-top">
+                        <img class="profile-picture-top" src="images/birds-7612651_640.png" alt="profile picture">
+                    </div>
+                </a>
+                <div class="profile-name">
+                    <a href="">
+                        <h2>Morgan Oakley</h2>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="admin-header-bottom">
+                <div class="header-profile">
+                    <div class="profile-picture-bottom">
+                        <img class="profile-picture-bottom" src="images/birds-7612651_640.png" alt="profile picture">
+                    </div>
+                    <div class="profile-intro">
+                        <p>Hi there,</p>
+                        <h1>Morgan Oakley (@morgan)</h2>
+                    </div>
+
+                </div>
+
+                <div class="header-menu">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="admin-sidebar">
+            <div class="sidebar-title">
+                <a href="">
+                    <span>
+                        <img class="halloween-icon" src="images/halloween.svg" alt="jack-o-lantern icon">
+                    </span> 
+                    <h1 class="dashboard-title">Dashboard</h1>
+                </a>
+            </div>
+            <div class="nav-link-container">
+                <div>
+                    <a href="">
+                        <span></span>
+                            <img class="nav-icon" src="images/home-outline.svg" alt="home page icon">
+                        </span>
+                        <h2 class="nav-link">Home</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <span>
+                            <img class="nav-icon" src="images/account-box.svg" alt="profile page icon">
+                        </span>
+                        <h2 class="nav-link">Profile</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <span>
+                            <img class="nav-icon" src="images/message.svg" alt="message page icon">
+                        </span>
+                        <h2 class="nav-link">Messages</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <span>
+                            <img class="nav-icon" src="images/clock-outline.svg" alt="history page icon">
+                        </span>
+                        <h2 class="nav-link">History</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <span>
+                            <img class="nav-icon" src="images/calendar-check.svg" alt="tasks page icon">
+                        </span>
+                        <h2 class="nav-link">Tasks</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <span>
+                            <img class="nav-icon" src="images/account-group.svg" alt="communities page icon">
+                        </span>
+                        <h2 class="nav-link">Communities</h2>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="support-links">
+                <div>
+                    <a href="">
+                        <span></span>
+                            <img class="nav-icon" src="images/cog.svg" alt="settings page icon">
+                        </span>
+                        <h2 class="nav-link">Settings</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <span></span>
+                            <img class="nav-icon" src="images/chat-question.svg" alt="support page icon">
+                        </span>
+                        <h2 class="nav-link">Support</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <span></span>
+                            <img class="nav-icon" src="images/shield-check-outline.svg" alt="privacy page icon">
+                        </span>
+                        <h2 class="nav-link">Privacy</h2>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="admin-main">
+            <section class="main-projects">
+                <h2 class="main-title">Your Projects</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <h3 class="project-title">Super Cool Project</h3>
+                        <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime aliquam commodi consequatur laboriosam! Incidunt velit tenetur, nisi perspiciatis qui eligendi magnam harum ab rerum tempora eos quo laborum. Quis, omnis?</p>
+                        <div class="project-icons">
+                            <a href=""><img alt="" class="fav-project"></a>
+                            <a href=""><img alt="" class="track-project"></a>
+                            <a href=""><img alt="" class="share-project"></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Less Cool Project</h3>
+                        <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime aliquam commodi consequatur laboriosam! Incidunt velit tenetur, nisi perspiciatis qui eligendi magnam harum ab rerum tempora eos quo laborum. Quis, omnis?</p>
+                        <div class="project-icons">
+                            <a href=""><img alt="" class="fav-project"></a>
+                            <a href=""><img alt="" class="track-project"></a>
+                            <a href=""><img alt="" class="share-project"></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Impossible App</h3>
+                        <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime aliquam commodi consequatur laboriosam! Incidunt velit tenetur, nisi perspiciatis qui eligendi magnam harum ab rerum tempora eos quo laborum. Quis, omnis?</p>
+                        <div class="project-icons">
+                            <a href=""><img alt="" class="fav-project"></a>
+                            <a href=""><img alt="" class="track-project"></a>
+                            <a href=""><img alt="" class="share-project"></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Easy Peasy App</h3>
+                        <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime aliquam commodi consequatur laboriosam! Incidunt velit tenetur, nisi perspiciatis qui eligendi magnam harum ab rerum tempora eos quo laborum. Quis, omnis?</p>
+                        <div class="project-icons">
+                            <a href=""><img alt="" class="fav-project"></a>
+                            <a href=""><img alt="" class="track-project"></a>
+                            <a href=""><img alt="" class="share-project"></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Ad Blocker</h3>
+                        <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime aliquam commodi consequatur laboriosam! Incidunt velit tenetur, nisi perspiciatis qui eligendi magnam harum ab rerum tempora eos quo laborum. Quis, omnis?</p>
+                        <div class="project-icons">
+                            <a href=""><img alt="" class="fav-project"></a>
+                            <a href=""><img alt="" class="track-project"></a>
+                            <a href=""><img alt="" class="share-project"></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Money Maker</h3>
+                        <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime aliquam commodi consequatur laboriosam! Incidunt velit tenetur, nisi perspiciatis qui eligendi magnam harum ab rerum tempora eos quo laborum. Quis, omnis?</p>
+                        <div class="project-icons">
+                            <a href=""><img alt="" class="fav-project"></a>
+                            <a href=""><img alt="" class="track-project"></a>
+                            <a href=""><img alt="" class="share-project"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-aside">
+                <section class="announcements">
+                    <h2 class="main-title">Announcements</h2>
+                    <div class="aside-card">
+                        <div class="announcement">
+                            <h3 class="announcement-title">Site Maintenance</h3>
+                            <p class="announcement-info">Proin ultricies accumsan magna, ut feugiat justo facilisis vitae. Nullam ullamcorper vehicula erat, sit amet pellentesque diam sollicitudin semper.</p>
+                            <div class="row-border"></div>
+                        </div>
+                        <div class="announcement">
+                            <h3 class="announcement-title">Site Maintenance</h3>
+                            <p class="announcement-info">Proin ultricies accumsan magna, ut feugiat justo facilisis vitae. Nullam ullamcorper vehicula erat, sit amet pellentesque diam sollicitudin semper.</p>
+                            <div class="row-border"></div>
+                        </div>
+                        <div class="announcement">
+                            <h3 class="announcement-title">Site Maintenance</h3>
+                            <p class="announcement-info">Proin ultricies accumsan magna, ut feugiat justo facilisis vitae.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="trending">
+                    <h2 class="main-title">Trending</h2>
+                    <div class="trending-card">
+                        <div>
+                            <a class="trending-account" href="">
+                                <img class="trending-pf" src="images/frog-6026117_640.png" alt="profile picture">
+                                <div class="trending-profile-tag">
+                                    <p>@tegan</p>
+                                    <p>World Peace Builder</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="trending-account">
+                                <img class="trending-pf" src="images/birds-7612651_640.png" alt="profile picture">
+                                <div class="trending-profile-tag">
+                                    <p>@morgan</p>
+                                    <p>Super Cool Project</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="trending-account">
+                                <img class="trending-pf" src="images/leaves-7552915_640.png" alt="profile picture">
+                                <div class="trending-profile-tag">
+                                    <p>@kendall</p>
+                                    <p>Life Changing App</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="trending-account">
+                                <img class="trending-pf" src="images/paper-rocket-6897262_640.png" alt="profile picture">
+                                <div class="trending-profile-tag">
+                                    <p>@alex</p>
+                                    <p>Zero Traffic Maker</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+        </section>
+
+    </div>
 </body>
 </html>

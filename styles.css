@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Rubik&family=Space+Grotesk:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+a:active {
+    color: rgb(211, 137, 1);
+}
+
+body {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: orange;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 300px 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.admin-header {
+    grid-area: 1 / 2 / 2 / -1;
+    background-color: #343434;
+    background-image: url("images/istockphoto-492107470-1024x1024.jpg");
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    padding: 20px 30px 20px 150px;
+    row-gap: 10px;
+}
+
+.admin-header-top {
+    grid-area: 1 / 1 / 2 / -1;
+    display: grid;
+    grid-template-columns: 10fr 35px 55px 2fr;
+    justify-items: end;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#search-button,
+.notification-icon {
+    height: 25px;
+    width: 30px;
+}
+
+#search-button:hover {
+    opacity: 0.7;
+}
+
+#search {
+    background-color: orange;
+    color: #242424;
+    border: 2px #141414;
+    border-radius: 20px;
+    height: 25px;
+    width: 400px;
+    font-size: 0.9em;
+    text-indent: 3px;
+    align-self: center;
+}
+
+#search:focus {
+    outline: 3px solid #5b21b6;
+}
+
+#search-form {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 5px;
+}
+
+.search-bar {
+    grid-area: 1 / 1 / -1 / 2;
+    justify-self: start;
+}
+
+.profile-picture-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.profile-name {
+    justify-self: start
+}
+
+
+.admin-header-bottom {
+    grid-area: 2 / 1 / -1 / -1;
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+}
+
+.header-profile {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-picture-bottom {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.profile-picture-top,
+.profile-picture-bottom {
+    background: #5b21b6;
+    border: 1px solid orange;
+}
+
+.profile-intro > p {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.profile-intro > h1 {
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.header-menu {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.header-menu > button {
+    height: 35px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: #5b21b6;
+    color: orange;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: .1ch;
+    font-weight: bold;
+
+    border: 1px solid orange;
+    box-shadow:  0px 0px 2px 2px #3b1577;
+}
+
+.header-menu > button:hover {
+    background-color: #6e29dd;
+    cursor: pointer;
+}
+
+.header-menu > button:active {
+    background-color: #4a1b96;
+}
+
+.admin-sidebar {
+    position: fixed;
+    width: 300px;
+    top: 0px;
+    height: 100vh;
+    grid-area: 1 / 1 / -1 / 2;
+    display: grid;
+    grid-template-rows: minmax(70px,90px) 2fr 3fr;
+
+    padding: 20px;
+
+     background: linear-gradient(to bottom, #5b21b6, #391574); 
+    /* background-image: url("images/istockphoto-492107470-1024x1024.jpg"); */
+    box-shadow: inset 0px 0px 10px 5px #3b1577;
+}
+
+.nav-link,
+.dashboard-title {
+    text-shadow: 2px 2px 8px #a57409;
+}
+
+.dashboard-title {
+    display: inline-block;
+    position: relative;
+    bottom: 13px;
+    font-size: 1.5rem;
+}
+
+.halloween-icon {
+    height: 50px;
+    width: 50px;
+    filter: drop-shadow(1px 1px red);
+}
+
+.nav-link-container {
+    margin-bottom: 80px;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    bottom: 9px;
+    margin-bottom: 10px;
+}
+
+
+.nav-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 3px;
+}
+
+.admin-main {
+    grid-area: 2 / 2 / -1 / -1;
+    background: #242424;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 20px 30px 50px 30px;
+    gap: 20px;
+}
+
+.main-projects {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.main-aside {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 21px;
+}
+
+.project-card,
+.aside-card,
+.trending-card {
+    background-color: #5b21b6;
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: rgb(209, 137, 3);
+    border-radius: 5px;
+
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.project-icons {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.fav-project {
+    content: url("images/heart-outline.svg");
+    height: 35px;
+    width: 35px;
+}
+.track-project {
+    content: url("images/eye-plus-outline.svg");
+    height: 35px;
+    width: 35px;
+}
+
+.share-project {
+    content: url("images/share-variant.svg");
+    height: 35px;
+    width: 35px;
+}
+
+.project-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    align-self: end;
+}
+
+.project-card {
+    height: 200px;  
+}
+
+.aside-card {
+    height: 300px;
+    padding: 25px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 20px;
+}
+
+.trending-card {
+    height: 300px;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 0px;
+}
+
+.trending-pf {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.trending-account {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 55px;
+    gap: 5px;
+}
+
+.trending-profile-tag {
+    position: relative;
+    top: 5px;
+}
+
+
+.announcement {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.announcement-title {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.announcement-info {
+    font-size: 0.8em;
+}
+
+.announcement-info,
+.announcement-title {
+    align-self: start;
+}
+
+.row-border {
+    margin-top: 4px;
+    border-bottom: 2px solid #242424;
+}
+
+.main-title {
+    margin-bottom: 12px;
+}
